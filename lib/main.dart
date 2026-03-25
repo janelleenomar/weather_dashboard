@@ -13,6 +13,13 @@ class MainApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Color(0xFFDDE4ED),
         body: Center(
+          child: Text(
+            'Weather Dashboard',
+            style: TextStyle(
+              fontSize: 30,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
         ),
       ),
     );
