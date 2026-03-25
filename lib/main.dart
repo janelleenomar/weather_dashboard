@@ -16,7 +16,7 @@ class MainApp extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              const SizedBox(height: 80),
+              const SizedBox(height: 30),
               const Text(
                 'Weather Dashboard',
                 style: TextStyle(
@@ -26,8 +26,8 @@ class MainApp extends StatelessWidget {
               ),
               const SizedBox(height: 20),
               Container(
-                width: 500,
-                height: 450,
+                width: 600,
+                height: 550,
                 decoration: BoxDecoration(
                   color: const Color(0xFFDDE4ED),
                   borderRadius: BorderRadius.circular(20),
@@ -39,6 +39,42 @@ class MainApp extends StatelessWidget {
                       offset: const Offset(5, 10),
                     ),
                   ],
+                ),
+                child: Padding(
+                  padding: EdgeInsets.all(24),
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      SizedBox(width: 70),
+                      Image.asset(
+                        'media/w04d.png', 
+                        width: 150,
+                        height: 150,
+                      ),
+                      SizedBox(width: 24),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            '25°C',
+                            style: TextStyle(
+                              fontSize: 48,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          SizedBox(height: 8),
+                          Text(
+                            'Cloudy with a chance of sunshine',
+                            style: TextStyle(fontSize: 15),
+                          ),
+                          Text(
+                            'London, UK',
+                            style: TextStyle(fontSize: 15),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ],
