@@ -12,7 +12,8 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         backgroundColor: const Color(0xFFDDE4ED),
-        body: Center(
+        body: Align(
+          alignment: Alignment.bottomCenter,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
@@ -105,7 +106,7 @@ class MainApp extends StatelessWidget {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   Text(hour, style: TextStyle(fontWeight: FontWeight.bold)),
-                                  SizedBox(height: 1),
+                                  SizedBox(height: 2),
                                   if (index == 0 || index == 1 || index == 4)
                                     Image.asset(
                                       'media/sun.png',
@@ -149,6 +150,61 @@ class MainApp extends StatelessWidget {
                             );
                           }),
                         ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              SizedBox(height: 30),
+              SafeArea(
+                child: Padding(
+                  padding: const EdgeInsets.only(bottom: 16.0, top: 8.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Container(
+                            decoration: const BoxDecoration(
+                              color: Color(0xFF2196F3),
+                              shape: BoxShape.circle,
+                            ),
+                            padding: const EdgeInsets.all(7),
+                            child: const Icon(Icons.home, color: Colors.white, size: 24),
+                          ),
+                          const Text('Home', style: TextStyle(color: Color(0xFF2196F3), fontWeight: FontWeight.w600, fontSize: 17, letterSpacing: 0.1)),
+                        ],
+                      ),
+                      const SizedBox(width: 35),
+                      Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Container(
+                            decoration: const BoxDecoration(
+                              color: Color(0xFF7B8A99),
+                              shape: BoxShape.circle,
+                            ),
+                            padding: const EdgeInsets.all(7),
+                            child: const Icon(Icons.search, color: Colors.white, size: 24),
+                          ),
+                          const Text('Search', style: TextStyle(color: Color(0xFF757575), fontWeight: FontWeight.w500, fontSize: 17, letterSpacing: 0.1)),
+                        ],
+                      ),
+                      const SizedBox(width: 35),
+                      Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Container(
+                            decoration: const BoxDecoration(
+                              color: Color(0xFF7B8A99),
+                              shape: BoxShape.circle,
+                            ),
+                            padding: const EdgeInsets.all(7),
+                            child: const Icon(Icons.person, color: Colors.white, size: 24),
+                          ),
+                          const Text('Profile', style: TextStyle(color: Color(0xFF757575), fontWeight: FontWeight.w500, fontSize: 17, letterSpacing: 0.1)),
+                        ],
                       ),
                     ],
                   ),
