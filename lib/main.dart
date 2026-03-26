@@ -128,7 +128,7 @@ class MainApp extends StatelessWidget {
                                           'media/two.png',
                                           width: 24,
                                           height: 24,
-                                            padding: const EdgeInsets.fromLTRB(24, 30, 24, 0),
+                                        )
                                       else if (index == 5)
                                         Image.asset(
                                           'media/rainy-day.png',
@@ -150,7 +150,7 @@ class MainApp extends StatelessWidget {
                                       const SizedBox(height: 8),
                                       Text(temp, style: GoogleFonts.inter(fontWeight: FontWeight.bold, fontSize: 20)),
                                     ],
-                                  ),
+                                ),
                                 );
                               }),
                             ),
