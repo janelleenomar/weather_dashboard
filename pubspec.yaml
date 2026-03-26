@@ -4,7 +4,7 @@ publish_to: 'none'
 version: 0.1.0+1
 
 environment:
-  sdk: ^3.11.3
+  sdk: ^3.11.1
 
 dependencies:
   flutter:
@@ -19,3 +19,9 @@ flutter:
   uses-material-design: true
   assets:
     - media/w04d.png
+    - media/sun.png
+    - media/weather.png
+    - media/cloud.png
+    - media/rainy-day.png
+    - media/two.png
+    - media/thunderstorm.png
