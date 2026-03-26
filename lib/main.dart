@@ -26,8 +26,8 @@ class MainApp extends StatelessWidget {
               ),
               const SizedBox(height: 20),
               Container(
-                width: 600,
-                height: 550,
+                width: 500,
+                height: 450,
                 decoration: BoxDecoration(
                   color: const Color(0xFFDDE4ED),
                   borderRadius: BorderRadius.circular(20),
@@ -41,34 +41,35 @@ class MainApp extends StatelessWidget {
                   ],
                 ),
                 child: Padding(
-                  padding: EdgeInsets.fromLTRB(24, 48, 24, 0),
+                  padding: EdgeInsets.fromLTRB(24, 30, 24, 0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          SizedBox(width: 70),
+                          SizedBox(width: 40),
                           Image.asset(
                             'media/w04d.png',
-                            width: 150,
-                            height: 150,
+                            width: 130,
+                            height: 120,
                           ),
                           SizedBox(width: 24),
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
+                              SizedBox(height: 12),
                               Text(
                                 '25°C',
                                 style: TextStyle(
-                                  fontSize: 48,
+                                  fontSize: 45,
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
-                              SizedBox(height: 8),
+                              SizedBox(height: 1),
                               Text(
                                 'Cloudy with a chance of sunshine',
-                                style: TextStyle(fontSize: 15),
+                                style: TextStyle(fontSize: 14),
                               ),
                               Text(
                                 'London, UK',
@@ -80,8 +81,8 @@ class MainApp extends StatelessWidget {
                       ),
                       SizedBox(height: 24),
                       Container(
-                        height: 320,
-                        padding: EdgeInsets.all(16),
+                        height: 270,
+                        padding: EdgeInsets.all(12),
                         decoration: BoxDecoration(
                           color: Color(0xFFC7D1DD),
                           borderRadius: BorderRadius.circular(24),
@@ -90,8 +91,8 @@ class MainApp extends StatelessWidget {
                           crossAxisCount: 4,
                           shrinkWrap: true,
                           physics: NeverScrollableScrollPhysics(),
-                          mainAxisSpacing: 16,
-                          crossAxisSpacing: 16,
+                          mainAxisSpacing: 13,
+                          crossAxisSpacing: 15,
                           children: List.generate(8, (index) {
                             final hour = ['10:00', '11:00', '13:00', '13:00', '10:00', '14:00', '14:00', '15:00'][index];
                             final temp = ['26°C', '27°C', '25°C', '24°C', '25°C', '24°C', '23°C', '22°C'][index];
@@ -104,42 +105,42 @@ class MainApp extends StatelessWidget {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   Text(hour, style: TextStyle(fontWeight: FontWeight.bold)),
-                                  SizedBox(height: 8),
+                                  SizedBox(height: 1),
                                   if (index == 0 || index == 1 || index == 4)
                                     Image.asset(
                                       'media/sun.png',
-                                      width: 32,
-                                      height: 32,
+                                      width: 24,
+                                      height: 24,
                                     )
                                   else if (index == 2)
                                     Image.asset(
                                       'media/weather.png',
-                                      width: 32,
-                                      height: 32,
+                                      width: 24,
+                                      height: 24,
                                     )
                                   else if (index == 3)
                                     Image.asset(
                                       'media/two.png',
-                                      width: 32,
-                                      height: 32,
+                                      width: 24,
+                                      height: 24,
                                     )
                                   else if (index == 5)
                                     Image.asset(
                                       'media/rainy-day.png',
-                                      width: 32,
-                                      height: 32,
+                                      width: 24,
+                                      height: 24,
                                     )
                                   else if (index == 6)
                                     Image.asset(
                                       'media/cloud.png',
-                                      width: 32,
-                                      height: 32,
+                                      width: 24,
+                                      height: 24,
                                     )
                                   else if (index == 7)
                                     Image.asset(
                                       'media/thunderstorm.png',
-                                      width: 32,
-                                      height: 32,
+                                      width: 24,
+                                      height: 24,
                                     ),
                                   SizedBox(height: 8),
                                   Text(temp, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20)),
