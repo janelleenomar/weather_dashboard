@@ -1,4 +1,6 @@
+
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const MainApp());
@@ -21,9 +23,9 @@ class MainApp extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   const SizedBox(height: 30),
-                  const Text(
+                  Text(
                     'Weather Dashboard',
-                    style: TextStyle(
+                    style: GoogleFonts.inter(
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
                     ),
@@ -65,7 +67,7 @@ class MainApp extends StatelessWidget {
                                   SizedBox(height: 12),
                                   Text(
                                     '25°C',
-                                    style: TextStyle(
+                                    style: GoogleFonts.inter(
                                       fontSize: 45,
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -77,7 +79,7 @@ class MainApp extends StatelessWidget {
                                   ),
                                   Text(
                                     'London, UK',
-                                    style: TextStyle(fontSize: 15),
+                                    style: GoogleFonts.inter(fontSize: 15),
                                   ),
                                 ],
                               ),
@@ -108,7 +110,7 @@ class MainApp extends StatelessWidget {
                                   child: Column(
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
-                                      Text(hour, style: TextStyle(fontWeight: FontWeight.bold)),
+                                      Text(hour, style: GoogleFonts.inter(fontWeight: FontWeight.bold, color: Colors.grey[700])),
                                       SizedBox(height: 2),
                                       if (index == 0 || index == 1 || index == 4)
                                         Image.asset(
@@ -147,7 +149,7 @@ class MainApp extends StatelessWidget {
                                           height: 24,
                                         ),
                                       SizedBox(height: 8),
-                                      Text(temp, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20)),
+                                      Text(temp, style: GoogleFonts.inter(fontWeight: FontWeight.bold, fontSize: 20)),
                                     ],
                                   ),
                                 );
@@ -175,7 +177,7 @@ class MainApp extends StatelessWidget {
                               padding: const EdgeInsets.all(7),
                               child: const Icon(Icons.home, color: Colors.white, size: 24),
                             ),
-                            const Text('Home', style: TextStyle(color: Color(0xFF2196F3), fontWeight: FontWeight.w600, fontSize: 17, letterSpacing: 0.1)),
+                            Text('Home', style: GoogleFonts.inter(color: Color(0xFF2196F3), fontWeight: FontWeight.w600, fontSize: 17, letterSpacing: 0.1)),
                           ],
                         ),
                         const SizedBox(width: 35),
@@ -190,7 +192,7 @@ class MainApp extends StatelessWidget {
                               padding: const EdgeInsets.all(7),
                               child: const Icon(Icons.search, color: Colors.white, size: 24),
                             ),
-                            const Text('Search', style: TextStyle(color: Color(0xFF757575), fontWeight: FontWeight.w500, fontSize: 17, letterSpacing: 0.1)),
+                            Text('Search', style: GoogleFonts.inter(color: Color(0xFF757575), fontWeight: FontWeight.w500, fontSize: 17, letterSpacing: 0.1)),
                           ],
                         ),
                         const SizedBox(width: 35),
@@ -205,7 +207,7 @@ class MainApp extends StatelessWidget {
                               padding: const EdgeInsets.all(7),
                               child: const Icon(Icons.person, color: Colors.white, size: 24),
                             ),
-                            const Text('Profile', style: TextStyle(color: Color(0xFF757575), fontWeight: FontWeight.w500, fontSize: 17, letterSpacing: 0.1)),
+                            Text('Profile', style: GoogleFonts.inter(color: Color(0xFF757575), fontWeight: FontWeight.w500, fontSize: 17, letterSpacing: 0.1)),
                           ],
                         ),
                       ],
